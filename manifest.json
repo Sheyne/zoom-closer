@@ -1,0 +1,12 @@
+{
+    "manifest_version": 2,
+    "name": "Zoom Closer",
+    "version": "1.0",
+    "description": "Closes zoom windows after a couple seconds",
+    "content_scripts": [
+      {
+        "matches": ["https://*.zoom.us/j/*"],
+        "js": ["closer.js"]
+      }
+    ]
+}
